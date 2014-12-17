@@ -1,0 +1,55 @@
+.mainWrapper {
+    position: relative;
+}
+
+.show-on-max980 {
+    display:none !important;
+}
+
+.makeAd {
+	margin:10px 0px;
+	padding-top:10px;
+	width:100%;
+	max-width:1280px;
+	border-top:1px dashed #DEDEDE;
+	height:56px;
+	line-height:56px;
+}
+
+.makeAd .makeAdButton {
+	display:block;
+	float:right;
+	height:56px;
+	width:182px;
+	background-image: url("img/makeAdBtn.png");
+}
+
+.makeAd .makeAdCancelButton {
+	display:block;
+	float:right;
+	height:56px;
+	height:30px;
+	margin-top:10px;
+	margin-right:10px;
+	color:#000000;
+}
+
+.makeAd .makeAdCancelButton:hover {
+	text-decoration:underline;
+}
+
+.makeAd .makeAdButton:hover {
+	background-image: url("img/makeAdBtn-hover.png");
+}
+
+/* responsive: */
+
+@media screen and (max-width:980px) {
+    .show-on-max980 {
+        display:block !important;
+    }
+    
+    .hide-on-max980 {
+        display:none !important;
+    }    
+}

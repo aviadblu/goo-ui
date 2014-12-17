@@ -1,0 +1,60 @@
+<div class="goopi-scene-edit">
+    <h2>Edit <span ng-bind="scene.name"></span></h2>
+    
+    <hr>
+    <label class="scene-text-label no-design">Add text:</label> 
+    <label class="scene-text-label hide-on-max980" ng-repeat="text in scene.texts" ng-bind="text.name" ng-class="{selected:text.selected}" ng-click="selectTextCallback($index)" repeat-done="selectText()"></label>
+    
+    
+    <!--    alternative view on narrow screen -->
+    <br style="clear:both" class="show-on-max980">
+    <button class="label-scroll-button previous show-on-max980" ng-click="prevText()" ng-class="{enabled:text_index>0}">&lt;</button>
+    <label class="scene-text-label label-scroll show-on-max980" ng-show="$index==text_index" ng-repeat="text in scene.texts" ng-bind="text.name" ng-class="{selected:text.selected}" repeat-done="selectText()"></label>
+    <button class="label-scroll-button next show-on-max980" ng-click="nextText()" ng-class="{enabled:text_index<(scene.texts.length-1)}">&gt;</button>
+    <!--    alternative view on narrow screen end -->
+    
+    <br style="clear:both">
+    <div class="text-properties">
+        <input class="selected-text" type="text" ng-model="editCtrl.text_selected.value" ng-change="textPropertyChanged({text_object:editCtrl.text_selected})" />
+        
+        <div class="design-property">Font: <select ng-model="editCtrl.text_selected.fontfamily" ng-options="o as o for o in fonts" ng-change="textPropertyChanged({text_object:editCtrl.text_selected})"></select></div>
+        <div class="design-property">Font size: <input class="font-size" type="number" ng-model="editCtrl.text_selected.fontsize" min="0" max="1000" ng-change="textPropertyChanged({text_object:editCtrl.text_selected})" /></div>
+        <div class="design-property">Text color: <input style="color:{{editCtrl.text_selected.fillcolor}}" class="text-color" colorpicker type="text" ng-model="editCtrl.text_selected.fillcolor" ng-change="textPropertyChanged({text_object:editCtrl.text_selected})" /></div>
+    </div>
+    
+    
+    <hr>
+    <label class="scene-text-label no-design">Add Video/Photo:</label> 
+    <label class="scene-text-label hide-on-max980" ng-repeat="imageframe in scene.imageframes" ng-bind="imageframe.name" ng-class="{selected:imageframe.selected}" ng-click="selectImageframeCallback($index)" repeat-done="selectImageframe()"></label>
+    
+     <!--    alternative view on narrow screen -->
+     <br style="clear:both" class="show-on-max980">
+    <button class="label-scroll-button previous show-on-max980" ng-click="prevImageframe()" ng-class="{enabled:imageframe_index>0}">&lt;</button>
+    <label class="scene-text-label label-scroll show-on-max980" ng-show="$index==imageframe_index" ng-repeat="imageframe in scene.imageframes" ng-bind="imageframe.name" ng-class="{selected:imageframe.selected}" repeat-done="selectImageframe()"></label>
+    <button class="label-scroll-button next show-on-max980" ng-click="nextImageframe()" ng-class="{enabled:imageframe_index<(scene.imageframes.length-1)}">&gt;</button>
+    <!--    alternative view on narrow screen end -->
+    
+    <br style="clear:both">
+    <div class="radio">
+        <label ng-class="{active:editCtrl.imageframe_selected.isvideo}">
+            <input type="radio" ng-model="editCtrl.imageframe_selected.isvideo" ng-value="true" ng-change="imageframePropertyChanged({imageframe_object:editCtrl.imageframe_selected})" /> Video
+        </label>
+        <label ng-class="{active:!editCtrl.imageframe_selected.isvideo}">
+            <input type="radio" ng-model="editCtrl.imageframe_selected.isvideo" ng-value="false" ng-change="imageframePropertyChanged({imageframe_object:editCtrl.imageframe_selected})" /> Photo
+        </label>
+        <br style="clear:both">
+    </div>
+    <div class="text-properties">
+        <input class="selected-text" type="text" ng-model="editCtrl.imageframe_selected.name" readonly="" />
+        
+        <div class="upload-button">
+            <div class="button-bg" ng-click="up_open=!up_open">Upload</div>
+                 
+            <div class="upload-options" ng-show="up_open" ng-init="up_open=false">
+            	<a href="javascript:void(0)" ng-click="uploadMyComputer(scene,editCtrl.imageframe_selected.id)">From My Computer</a>
+                <a href="javascript:void(0)" ng-click="uploadLibrary(scene,editCtrl.imageframe_selected.id)">From My Library</a>
+                <a href="javascript:void(0)" ng-click="uploadBank(scene,editCtrl.imageframe_selected.id)">From Goopi Image/Video Bank</a>
+            </div>
+        </div>
+    </div>
+</div>

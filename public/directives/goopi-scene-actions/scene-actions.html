@@ -1,0 +1,30 @@
+<div class="scene-actions">
+	<div class="action-button" ng-click="applyAction('duplicate')">
+		<img src="directives/goopi-scene-actions/img/duplicate-scene.png" />
+	</div>
+	<div class="action-button" ng-click="applyAction('delete')">
+		<img src="directives/goopi-scene-actions/img/delete-scene.png" />
+	</div>
+	<div class="action-button" ng-click="applyAction('move_backward')">
+		<img src="directives/goopi-scene-actions/img/move-back.png" />
+	</div>
+	<div class="action-button" ng-click="applyAction('move_forward')">
+		<img src="directives/goopi-scene-actions/img/move-forward.png" />
+	</div>
+	<div class="action-button" ng-click="applyAction('rename')">
+		<img src="directives/goopi-scene-actions/img/rename-scene.png" />
+	</div>
+	
+	<br class="break-line" />
+	
+	<div class="play-all">
+		<img class="play-all-button" ng-click="playAll()" src="directives/goopi-scene-actions/img/play-all-scene.png" />
+		
+		<div class="text-wrap-box">
+			<h3>TOTAL</h3>
+			Scenes: <span ng-bind="scenes_n"></span> <br>
+			Duration: <span ng-bind="scenes_d"></span> sec.
+		</div>
+	</div>
+	<br style="clear:both">
+</div>

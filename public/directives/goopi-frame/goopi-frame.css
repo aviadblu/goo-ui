@@ -1,0 +1,134 @@
+/* frame */
+.goopi-frame {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width:50%;
+    max-width:640px;
+    background-color:#1a1a1a;
+    padding:12px;
+    position: relative;
+    float:left;
+}
+
+.goopi-frame h3 {
+    color:#ffffff;
+    font-weight:normal;
+    font-size:18px;
+    margin:0px;
+    padding:0px;
+}
+
+.goopi-frame h3 .right {
+    float:right;
+}
+
+.goopi-frame .progress-line {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width:100%;
+    height:46px;
+    left:0px;
+    z-index: 100;
+    position: relative;
+}
+
+.goopi-frame .progress-line .prgress-bg {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width:100%;
+    height:46px;
+    background-color:#94AF15;
+    padding-left: 50px;
+}
+
+.goopi-frame .progress-line .prgress-bg .timeline-time {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 5px;
+    width:50px;
+    height: 22px;
+    line-height: 22px;
+    float: left;
+    position: absolute;
+    z-index:10;
+    left:0px;
+}
+
+.goopi-frame .progress-line .prgress-bg .goopi-scenes-timeline {
+    width:100%;
+    background-color:#94AF15;
+    color:#94AF15;
+    padding: 0;
+    margin: 0;
+}
+
+.goopi-frame .frame-loader {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background-image:url('img/loader_bg.png');
+    background-repeat: repeat;
+    z-index:110;
+        
+}
+
+.goopi-frame .frame-loader .loader {
+    margin:0px auto;
+    width:100px;
+    height:100%;
+    background-image:url('img/ajax-loader.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.goopi-frame .slider-wrap {
+	height:46px;
+}
+
+.goopi-frame .scale-marks {
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+	width:100%;
+	height:24px;
+	position:relative;
+	border-top:1px solid #1A1A1A;
+}
+
+
+.goopi-frame .scale-marks .mark {
+	background-image:url("img/line.png");
+	background-repeat:no-repeat;
+    font-size:10px;
+    line-height:10px;
+    height:10px;
+    padding-top:12px;
+    position:absolute;
+    left:50%;
+    width:30px;
+    text-align:center;
+    margin-left:-15px;
+}
+/* frame end */
+
+@media screen and (max-width:980px) {
+    .goopi-frame {
+        width:100%;
+        margin:0px auto;
+        float:none;
+    }
+}
+
+@media screen and (max-width:640px) {
+     .goopi-frame h3 {
+         font-size:14px;
+     }
+}

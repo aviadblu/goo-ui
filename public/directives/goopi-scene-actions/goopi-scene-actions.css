@@ -1,0 +1,64 @@
+.scene-actions {
+	width: 100%;
+	max-width:1280px;
+	margin-top:10px;
+	position:relative;
+}
+
+.scene-actions .action-button {
+	width:18%;
+	max-width:80px;
+	
+	float:left;
+	cursor:pointer;
+	margin:5px 1%;
+}
+
+.scene-actions .play-all {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width:230px;
+	height:100px;
+	border: 3px dashed #BFBFBF;
+	float:right;
+	background-image:url("img/playall-button-background.png");
+	color:#666666;
+	font-weight:bold;
+	position:relative;
+}
+
+.scene-actions .play-all .text-wrap-box {
+	margin-top:10px;
+	margin-left:5px;
+}
+
+.scene-actions .play-all h3 {
+	margin:0;
+	padding:0;
+	font-size:18px;
+	line-height:22px;
+	margin-bottom:10px;
+	
+}
+
+.scene-actions .play-all .play-all-button {
+	position:absolute;
+	top:6px;
+	right:5px;
+	cursor:pointer;
+}
+
+.scene-actions br.break-line {
+	display:none;
+}
+
+@media screen and (max-width:760px) {
+	.scene-actions .play-all {
+		margin-top:10px;
+	}
+	.scene-actions br.break-line {
+		display:block;
+		clear:both;
+	}
+}

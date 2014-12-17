@@ -1,0 +1,253 @@
+/* scene-edit */
+.goopi-scene-edit {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width:50%;
+    max-width:640px;
+    padding:12px;
+    position: relative;
+    float:left;    
+}
+
+.goopi-scene-edit h2{
+    margin:0;
+    padding: 0;
+    font-size: 36px;
+    color:#1a1a1a;
+    font-weight: normal;
+}
+
+.goopi-scene-edit hr{
+    margin:10px 0px;
+}
+
+.goopi-scene-edit .scene-text-label {
+    display: inline-block;
+    float:left;
+    margin-right: 5px;
+    background-color: #666666;
+    padding:3px 15px;
+    color:#ffffff;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    cursor:pointer;
+}
+
+.goopi-scene-edit .scene-text-label.label-scroll {
+    display:none;
+}
+
+.goopi-scene-edit .scene-text-label.no-design {
+    background-color: #ffffff;
+    color:#1a1a1a;
+    padding:3px 0px;
+    cursor: default;
+    font-weight: bold;
+    font-size:18px;
+    margin-right:10px;
+}
+
+.goopi-scene-edit .scene-text-label.selected {
+    display: inline-block;
+    background-color: #94af15;
+}
+
+.goopi-scene-edit .label-scroll-button {
+    display: inline-block;
+    float:left;
+    border:0;
+    margin-right: 5px;
+    background-color: #666666;
+    padding:3px 10px;
+    color:#ffffff;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    cursor:pointer;
+}
+
+.goopi-scene-edit .label-scroll-button.enabled {
+    background-color: #94af15;
+}
+
+.goopi-scene-edit .text-properties{
+   line-height: 30px;
+   margin-top:10px;
+   text-align: right;
+   position: relative;
+}
+
+.goopi-scene-edit .text-properties select{
+    width:120px;
+    margin:0px;
+}
+
+.goopi-scene-edit .text-properties input {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 30px;
+    margin: 0;
+    
+}
+
+.goopi-scene-edit .text-properties .design-property {
+    display: inline;
+}
+
+.goopi-scene-edit .text-properties input.font-size {
+    width:60px;
+}
+
+.goopi-scene-edit .text-properties input.text-color {
+    width:140px;
+}
+
+.goopi-scene-edit .text-properties .selected-text {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width:100%;
+    height: 30px;
+}
+
+
+.goopi-scene-edit .radio {
+    margin-top:10px;
+    padding-left: 0px;
+}
+
+.goopi-scene-edit .radio  label{
+    display:inline-block;
+    float:left;
+    width:80px;
+    background-image: url('img/checkbox-circle.png');
+    background-position: center left;
+    background-repeat: no-repeat;
+    padding-left: 22px;
+}
+
+.goopi-scene-edit .radio  label.active {
+    background-image: url('img/checkbox-circle-checked.png');
+}
+
+.goopi-scene-edit .radio  label input[type="radio"]{
+    display: none;
+}
+
+.goopi-scene-edit .upload-button {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width:50%;
+    max-width: 200px;
+    height:24px;
+    line-height: 24px;
+    text-align: left;
+    color:#ffffff;    
+    position: absolute;
+    right:2px;
+    top:4px;
+        
+}
+
+.goopi-scene-edit .upload-button .button-bg {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width:100%;
+    position:absolute;
+    height:24px;
+    left:0px;
+    top:0px;
+    z-index: 5;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    cursor:pointer;
+    background-image: url('img/arrow.png');
+    background-position: center right;
+    background-repeat: no-repeat;
+    padding:0px 15px;
+    font-weight: bold;
+    background-color: #94af15;
+}
+
+.goopi-scene-edit .upload-button .upload-options {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width:100%;
+    position:absolute;
+    left:0px;
+    background-color: #ffffff;
+    top:18px;
+    z-index:1;
+    border:1px solid #bfbfbf;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    padding:5px;
+}
+
+.goopi-scene-edit .upload-button .upload-options a {
+    display: block;
+    font-size: 12px;
+    color:#1a1a1a;
+    padding:0px 5px;
+}
+
+.goopi-scene-edit .upload-button .upload-options a:hover {
+    background-color: #f2f2f2;
+    text-decoration: none;
+}
+/* scene-edit end */
+
+
+
+@media screen and (max-width:980px) {
+    .goopi-scene-edit .upload-button .upload-options {
+        top:auto;
+        bottom:18px;
+        padding-top:2px;
+    }
+    
+    .goopi-scene-edit {
+        width:100%;
+        float:none;
+        max-width: none;
+    }
+    
+    .goopi-scene-edit h2{ 
+        font-size: 26px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .goopi-scene-edit .text-properties .design-property {
+        display: block;
+        margin-top:3px;
+    }
+    
+    .goopi-scene-edit .text-properties{
+        text-align: left;
+    }          
+     
+    .goopi-scene-edit hr {
+        margin:5px 0px;
+    }
+    .goopi-scene-edit .text-properties {
+        margin-top: 0px;
+    }
+    .goopi-scene-edit .radio {
+        margin-top: 0px;
+    }
+    
+    .goopi-scene-edit .upload-button .upload-options a {
+        font-size: 10px;
+    }
+    
+    .goopi-scene-edit h2{ 
+        font-size: 18px;
+        line-height: 20px;
+    }
+}

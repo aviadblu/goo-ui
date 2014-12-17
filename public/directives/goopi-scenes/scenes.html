@@ -1,0 +1,13 @@
+<div class="goopi-scenes-container" on-resize="scenesAutoFix()" ng-swipe-right="scenesBackward()" ng-swipe-left="scenesForward()">    
+    <div class="scroller left" ng-click="scenesBackward()" ng-show="scCtrl.scroller_left<10"></div>
+    <div class="scroller right" ng-click="scenesForward()" ng-show="scCtrl.scroller_left>-scCtrl.max_left"></div>
+    <div class="scenes-scroll" ng-style="scCtrl.scene_scroll">
+        <div class="goopi_scene" ng-click="scene_clicked_dir(scene,$index)" ng-class="{'selected':scene.selected,'last':$last}"  ng-repeat="scene in scenes" repeat-done="scenesAutoFix();fixSelected()">
+            <div class="arrow-right"></div>
+            <label><span ng-bind="scene.name"></span><span class="right-small" ng-bind="scene.duration"></span></label>
+            <img class="scene-line-image" ng-src="{{scene.imageURL}}" />
+            <label class="outof"><span ng-bind="$index+1"></span>/<span ng-bind="scenes.length"></span></label>
+        </div>
+    </div>
+    <br style="clear:both">
+</div>

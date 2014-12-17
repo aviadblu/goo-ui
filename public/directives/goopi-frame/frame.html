@@ -1,0 +1,21 @@
+<div class="goopi-frame">
+    <h3>
+        Scene: <span ng-bind="scene.name"></span>
+        <span class="right">Duration: <span ng-bind="scene.duration"></span> sec</span>
+    </h3>
+    <div ng-show="scene.onload" class="frame-loader"><div class="loader"></div></div>
+    <img ng-src="{{scene.currentimageURL}}" ng-click="imageClicked({scene_object:scene})" />
+
+    <div class="progress-line">
+        <div class="prgress-bg">
+            <div class="timeline-time" ng-bind="scene.starttimeontemplate">00:00</div>
+            <div class="slider-wrap">
+                <input slider-stop="sliderStop()" class="goopi-scenes-timeline" type="range" ng-change="scene.starttimeontemplate=DecToSSFF(sliderTime)" ng-model="sliderTime" step="0.01" name="points" min="0" max="{{getDecTime(scene.duration)}}"><br>
+                <div class="scale-marks">
+                	<div class="mark" ng-init="setMarks(scene)" ng-repeat="mark in marks" style="left:{{mark.left}}" ng-bind="mark.text"></div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

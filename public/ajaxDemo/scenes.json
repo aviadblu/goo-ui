@@ -1,0 +1,317 @@
+[
+    {
+        "ID": "546de7e9d008f4926f000003",
+        "name": "Scene 1 test",
+        "imageURL": "img/showImg1.jpg",
+        "currentimageURL": "img/showImg1.jpg",
+        "onload": false,
+        "duration": "04:02",
+        "starttimeontemplate": "00:00",
+        "enabled": true,
+        "selected": false,
+        "imageframes": [
+            {
+                "name": "Image name 1",
+                "enabled": true,
+                "selected": true,
+                "isvideo": false,
+                "videosubtype": "",
+                "duration": "00:00",
+                "minimalduration": "00:00",
+                "snapshoturl": "img/snapshot1.jpg",
+                "originalid": "1234",
+                "id": "546de7e9d008f4926f000005"
+            },
+            {
+                "name": "Image name 2",
+                "enabled": true,
+                "selected": false,
+                "isvideo": false,
+                "videosubtype": "",
+                "duration": "00:00",
+                "minimalduration": "00:00",
+                "snapshoturl": "img/snapshot2.jpg",
+                "originalid": "1234",
+                "id": "546de7e9d008f4926f000004"
+            }
+        ],
+        "texts": [
+            {
+                "name": "String name 1",
+                "enabled": true,
+                "selected": true,
+                "value": "Text 1 content",
+                "fontfamily": "ACaslonPro-BoldItalic",
+                "fillcolor": "#00ff22",
+                "strokecolor": "#000000",
+                "fontsize": 32,
+                "originalid": "1234",
+                "id": "546de7e9d008f4926f000007"
+            },
+            {
+                "name": "String name 2",
+                "enabled": true,
+                "selected": false,
+                "value": "Text 2 content",
+                "fontfamily": "ACaslonPro-BoldItalic",
+                "fillcolor": "#00cc88",
+                "strokecolor": "#000000",
+                "fontsize": 24,
+                "originalid": "1234",
+                "id": "546de7e9d008f4926f000006"
+            }
+        ]
+    },
+    {
+        "ID": "546de7e9d008f4926f000008",
+        "name": "Scene 2",
+        "imageURL": "img/showImg2.jpg",
+        "currentimageURL": "img/showImg2.jpg",
+        "onload": false,
+        "duration": "05:22",
+        "starttimeontemplate": "00:00",
+        "enabled": true,
+        "selected": false,
+        "imageframes": [
+            {
+                "name": "Image name 1",
+                "enabled": true,
+                "selected": true,
+                "isvideo": false,
+                "videosubtype": "",
+                "duration": "00:00",
+                "minimalduration": "00:00",
+                "snapshoturl": "img/snapshot1.jpg",
+                "originalid": "1234",
+                "id": "546de7e9d008f4926f00000a"
+            },
+            {
+                "name": "Image name 2",
+                "enabled": true,
+                "selected": false,
+                "isvideo": false,
+                "videosubtype": "",
+                "duration": "00:00",
+                "minimalduration": "00:00",
+                "snapshoturl": "img/snapshot2.jpg",
+                "originalid": "1234",
+                "id": "546de7e9d008f4926f000009"
+            }
+        ],
+        "texts": [
+            {
+                "name": "String name 1",
+                "enabled": true,
+                "selected": true,
+                "value": "Text 1 content",
+                "fontfamily": "ACaslonPro-BoldItalic",
+                "fillcolor": "#00ff22",
+                "strokecolor": "#000000",
+                "fontsize": 32,
+                "originalid": "1234",
+                "id": "546de7e9d008f4926f00000c"
+            },
+            {
+                "name": "String name 2",
+                "enabled": true,
+                "selected": false,
+                "value": "Text 2 content",
+                "fontfamily": "ACaslonPro-BoldItalic",
+                "fillcolor": "#00cc88",
+                "strokecolor": "#000000",
+                "fontsize": 24,
+                "originalid": "1234",
+                "id": "546de7e9d008f4926f00000b"
+            }
+        ]
+    },
+    {
+        "ID": "546de7e9d008f4926f00000d",
+        "name": "Scene 3",
+        "imageURL": "img/showImg3.jpg",
+        "currentimageURL": "img/showImg3.jpg",
+        "onload": false,
+        "duration": "04:00",
+        "starttimeontemplate": "00:00",
+        "enabled": true,
+        "selected": true,
+        "imageframes": [
+            {
+                "name": "Image name 1",
+                "enabled": true,
+                "selected": true,
+                "isvideo": false,
+                "videosubtype": "",
+                "duration": "00:00",
+                "minimalduration": "00:00",
+                "snapshoturl": "img/snapshot1.jpg",
+                "originalid": "1234",
+                "id": "546de7e9d008f4926f00000f"
+            },
+            {
+                "name": "Image name 2",
+                "enabled": true,
+                "selected": false,
+                "isvideo": false,
+                "videosubtype": "",
+                "duration": "00:00",
+                "minimalduration": "00:00",
+                "snapshoturl": "img/snapshot2.jpg",
+                "originalid": "1234",
+                "id": "546de7e9d008f4926f00000e"
+            }
+        ],
+        "texts": [
+            {
+                "name": "String name 1",
+                "enabled": true,
+                "selected": true,
+                "value": "Text 1 content",
+                "fontfamily": "ACaslonPro-BoldItalic",
+                "fillcolor": "#00ff22",
+                "strokecolor": "#000000",
+                "fontsize": 32,
+                "originalid": "1234",
+                "id": "546de7e9d008f4926f000011"
+            },
+            {
+                "name": "String name 2",
+                "enabled": true,
+                "selected": false,
+                "value": "Text 2 content",
+                "fontfamily": "ACaslonPro-BoldItalic",
+                "fillcolor": "#00cc88",
+                "strokecolor": "#000000",
+                "fontsize": 24,
+                "originalid": "1234",
+                "id": "546de7e9d008f4926f000010"
+            }
+        ]
+    },
+    {
+        "ID": "546de7e9d008f4926f000012",
+        "name": "Scene 4",
+        "imageURL": "img/showImg4.jpg",
+        "currentimageURL": "img/showImg4.jpg",
+        "onload": false,
+        "duration": "06:30",
+        "starttimeontemplate": "00:00",
+        "enabled": true,
+        "selected": false,
+        "imageframes": [
+            {
+                "name": "Image name 1",
+                "enabled": true,
+                "selected": true,
+                "isvideo": false,
+                "videosubtype": "",
+                "duration": "00:00",
+                "minimalduration": "00:00",
+                "snapshoturl": "img/snapshot1.jpg",
+                "originalid": "1234",
+                "id": "546de7e9d008f4926f000014"
+            },
+            {
+                "name": "Image name 2",
+                "enabled": true,
+                "selected": false,
+                "isvideo": false,
+                "videosubtype": "",
+                "duration": "00:00",
+                "minimalduration": "00:00",
+                "snapshoturl": "img/snapshot2.jpg",
+                "originalid": "1234",
+                "id": "546de7e9d008f4926f000013"
+            }
+        ],
+        "texts": [
+            {
+                "name": "String name 1",
+                "enabled": true,
+                "selected": true,
+                "value": "Text 1 content",
+                "fontfamily": "ACaslonPro-BoldItalic",
+                "fillcolor": "#00ff22",
+                "strokecolor": "#000000",
+                "fontsize": 32,
+                "originalid": "1234",
+                "id": "546de7e9d008f4926f000016"
+            },
+            {
+                "name": "String name 2",
+                "enabled": true,
+                "selected": false,
+                "value": "Text 2 content",
+                "fontfamily": "ACaslonPro-BoldItalic",
+                "fillcolor": "#00cc88",
+                "strokecolor": "#000000",
+                "fontsize": 24,
+                "originalid": "1234",
+                "id": "546de7e9d008f4926f000015"
+            }
+        ]
+    },
+    {
+        "ID": "546de7e9d008f4926f000017",
+        "name": "Scene 5",
+        "imageURL": "img/showImg5.jpg",
+        "currentimageURL": "img/showImg5.jpg",
+        "onload": false,
+        "duration": "03:20",
+        "starttimeontemplate": "00:00",
+        "enabled": true,
+        "selected": false,
+        "imageframes": [
+            {
+                "name": "Image name 1",
+                "enabled": true,
+                "selected": true,
+                "isvideo": false,
+                "videosubtype": "",
+                "duration": "00:00",
+                "minimalduration": "00:00",
+                "snapshoturl": "img/snapshot1.jpg",
+                "originalid": "1234",
+                "id": "546de7e9d008f4926f000019"
+            },
+            {
+                "name": "Image name 2",
+                "enabled": true,
+                "selected": false,
+                "isvideo": false,
+                "videosubtype": "",
+                "duration": "00:00",
+                "minimalduration": "00:00",
+                "snapshoturl": "img/snapshot2.jpg",
+                "originalid": "1234",
+                "id": "546de7e9d008f4926f000018"
+            }
+        ],
+        "texts": [
+            {
+                "name": "String name 1",
+                "enabled": true,
+                "selected": true,
+                "value": "Text 1 content",
+                "fontfamily": "ACaslonPro-BoldItalic",
+                "fillcolor": "#00ff22",
+                "strokecolor": "#000000",
+                "fontsize": 32,
+                "originalid": "1234",
+                "id": "546de7e9d008f4926f00001b"
+            },
+            {
+                "name": "String name 2",
+                "enabled": true,
+                "selected": false,
+                "value": "Text 2 content",
+                "fontfamily": "ACaslonPro-BoldItalic",
+                "fillcolor": "#00cc88",
+                "strokecolor": "#000000",
+                "fontsize": 24,
+                "originalid": "1234",
+                "id": "546de7e9d008f4926f00001a"
+            }
+        ]
+    }
+]

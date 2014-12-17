@@ -1,0 +1,63 @@
+{
+    "ID": "546de7e9d008f4926f000003",
+    "name": "Scene 1 test",
+    "imageURL": "img/showImg1.jpg",
+    "currentimageURL": "img/showImg1.jpg",
+    "onload": false,
+    "duration": "04:02",
+    "starttimeontemplate": "01:00",
+    "enabled": true,
+    "selected": false,
+    "imageframes": [
+        {
+            "name": "Image name 1",
+            "enabled": true,
+            "selected": true,
+            "isvideo": false,
+            "videosubtype": "",
+            "duration": "00:00",
+            "minimalduration": "00:00",
+            "snapshoturl": "img/snapshot1.jpg",
+            "originalid": "1234",
+            "id": "546de7e9d008f4926f000005"
+        },
+        {
+            "name": "Image name 2",
+            "enabled": true,
+            "selected": false,
+            "isvideo": false,
+            "videosubtype": "",
+            "duration": "00:00",
+            "minimalduration": "00:00",
+            "snapshoturl": "img/snapshot2.jpg",
+            "originalid": "1234",
+            "id": "546de7e9d008f4926f000004"
+        }
+    ],
+    "texts": [
+        {
+            "name": "String name 1",
+            "enabled": true,
+            "selected": true,
+            "value": "Text 1 content",
+            "fontfamily": "ACaslonPro-BoldItalic",
+            "fillcolor": "#00ff22",
+            "strokecolor": "#000000",
+            "fontsize": 32,
+            "originalid": "1234",
+            "id": "546de7e9d008f4926f000007"
+        },
+        {
+            "name": "String name 2",
+            "enabled": true,
+            "selected": false,
+            "value": "Text 2 content",
+            "fontfamily": "ACaslonPro-BoldItalic",
+            "fillcolor": "#00cc88",
+            "strokecolor": "#000000",
+            "fontsize": 24,
+            "originalid": "1234",
+            "id": "546de7e9d008f4926f000006"
+        }
+    ]
+}
