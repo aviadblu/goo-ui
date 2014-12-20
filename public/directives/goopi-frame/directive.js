@@ -24,14 +24,7 @@ app.directive('goopiFrame', function($interpolate,$compile) {
           scope.DecToSSFF = function(dec){
               return getTimeFrameFormat(dec);
           };
-          
-          scope.marks = [
-	          	{text:"00:00",left:0}
-	          ];
-          //scope.getDecTime(scene.starttimeontemplate);
-
-          
-          
+ 
       },
       controller: function ($scope, $element, $attrs) {
           $scope.sliderStop = function(){
@@ -43,14 +36,28 @@ app.directive('goopiFrame', function($interpolate,$compile) {
               
           };
 
-		  $scope.setMarks = function(scene) {
-		  	return;
-          	console.log(scene.duration)
+
+          $scope.$watch('scene', function(newValue, oldValue) {
+                if(newValue) {
+                    $scope.setMarks(newValue);
+                }                
+          });
+           $scope.setMarks = function(scene) {
+                var marks = 6;
           	setTimeout(function(){
-          		$scope.marks.push({text:"02:00",left:50});
-          		if($scope.$$phase || $scope.$root.$$phase) {} else {$scope.$apply(function () {});}
+                    var mark_html = '';               
+                    var max = $scope.getDecTime(scene.duration);               
+                    var step = max/marks;        
+                    var per_part = 100 / marks;
+                    for(var i=0; i<=marks;i++) {
+                        mark_html+='<div class="mark" style="left:'+(i*per_part)+'%" >'+$scope.getTimeFrameFormat(step*i)+'</div>';
+                        
+                        if(i<marks)
+                            mark_html+='<div class="half_mark" style="left:'+(i*per_part + (0.5*per_part))+'%" ></div>';
+                    }                              
+                    document.getElementById('frame_marks').innerHTML = mark_html;
           	});
-    		
+
           };
       }
     };
